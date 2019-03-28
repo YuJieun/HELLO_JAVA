@@ -1,3 +1,4 @@
-# 안녕하세요, 유지은입니다 ^____^
+#### 스터디 일정
 
-열심히 공부하겠습니다 ㅎㅎ ♥
+https://docs.google.com/document/d/1rHZL4JP2jBXMqIYVgXC9p8Eke0mgQ041t752lV7N8Wk/edit
+
