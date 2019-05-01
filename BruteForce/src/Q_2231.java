@@ -2,7 +2,6 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 public class Q_2231 {
-
 	public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int n = Integer.parseInt(br.readLine());
@@ -20,12 +19,10 @@ public class Q_2231 {
 				min = i;
 			}
 		}
-		
 		if(min == Integer.MAX_VALUE)
 			System.out.print(0);
 		else
 			System.out.print(min);
-
 	}
 
 }
