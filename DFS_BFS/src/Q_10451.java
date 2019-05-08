@@ -26,13 +26,13 @@ public class Q_10451 {
 			visited = new boolean[n+1];
 			for(int j=1;j<=n;j++) {
 				if(visited[j]==false)
-					go(j);
+					dfs(j);
 			}
 			System.out.println(cnt);
 			cnt=0;
 		}
 	}
-	public static void go(int index) {
+	public static void dfs(int index) {
 		visited[index]= true;
 		if(visited[map[index]] == true)
 			cnt++;
