@@ -15,7 +15,6 @@ public class Q_7568 {
 			arr[i][0] = Integer.parseInt(st.nextToken());
 			arr[i][1] = Integer.parseInt(st.nextToken());
 		}
-		
 		int[] len = new int[n];
 		Arrays.fill(len, 1);
 		for(int i=0;i<n;i++) {
@@ -26,7 +25,6 @@ public class Q_7568 {
 					len[i]++;
 			}
 		}
-		
 		for(int i=0;i<n;i++) {
 			System.out.print(len[i]+" ");
 		}

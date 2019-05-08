@@ -32,8 +32,7 @@ public class Q_7576 {
 	
 	public static void bfs() {
 		Queue<Point> q = new LinkedList<Point>();
-		
-		
+			
 		/* 익은 토마토 좌표 담아줌*/
 		for(int i=0;i<n;i++) {
 			for(int j=0;j<m;j++) {
