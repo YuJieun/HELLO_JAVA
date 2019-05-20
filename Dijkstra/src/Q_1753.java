@@ -41,14 +41,7 @@ public class Q_1753 {
             dis[i] = -1;
       }
       
-      Comparator<Point> cp = new Comparator<Point>() {
-         @Override
-         public int compare(Point p1, Point p2) {
-            return p1.weight - p2.weight;
-         }
-      };
-      
-      PriorityQueue<Point> q= new PriorityQueue<>(cp);
+      PriorityQueue<Point> q= new PriorityQueue<>();
       q.add(new Point(start,0));
       
       while(!q.isEmpty()) {
@@ -78,11 +71,16 @@ public class Q_1753 {
    }
 }
 
-class Point{
+class Point implements Comparable<Point>{
    int to, weight;
    
    Point(int to, int weight){
       this.to = to;
       this.weight = weight;
+   }
+   
+   @Override
+   public int compareTo(Point p) {
+	   return this.weight - p.weight;
    }
 }
