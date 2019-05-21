@@ -49,6 +49,7 @@ public class Q_1865 {
 	    	int[] dis = new int[n+1];
 
 	    	
+	    	//dis[1]은 0으로 나머지는 max로
 	    	for(int i=2; i<=n;i++)
 	    		dis[i] = Integer.MAX_VALUE;
 	    	for(int i=1;i<=n; i++) {
