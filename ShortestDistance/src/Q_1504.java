@@ -9,6 +9,8 @@ public class Q_1504 {
 	static int[][] dis;
 	static ArrayList<Point3>[] arr;
 	static int n,e;
+	//여기서 INF를 Integer.MAX_VALUE로 하면 틀리고 800*1000을 하면 맞음.
+	//이유를 모르겠음
 	static final int INF = 800*1000;
 	public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
