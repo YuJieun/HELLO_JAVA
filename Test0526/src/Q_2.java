@@ -25,12 +25,11 @@ public class Q_2 {
 			if(count[i]!=1) {
 				System.out.println("false");
 				flag = false;
-				break;
+				return;
 			}
 		}
 		
-		if(flag == true)
-			System.out.println("true");
+		System.out.println("true");
 	}
 
 }
