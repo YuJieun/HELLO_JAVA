@@ -25,7 +25,7 @@ public class Q_3 {
 			arr[i][1] = tmp_y;		
 		}
 		
-		int[] count_x = new int[max_x+1];
+ 		int[] count_x = new int[max_x+1];
 		int[] count_y = new int[max_y+1];
 		
 		for(int i=0;i<3;i++) {
