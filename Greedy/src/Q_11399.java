@@ -27,12 +27,6 @@ public class Q_11399 {
 			total_sum += current_time;
 		}
 		
-		System.out.println(total_sum);
-		
-		
-		
-		
-		
-		
+		System.out.println(total_sum);		
 	}
 }
