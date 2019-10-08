@@ -2,7 +2,7 @@ package programmers_hash;
 
 import java.util.*;
 
-class Solution {
+class Q_2 {
     public boolean solution(String[] phone_book) {
         boolean answer = true;
         HashMap<String,Integer> map = new HashMap();
