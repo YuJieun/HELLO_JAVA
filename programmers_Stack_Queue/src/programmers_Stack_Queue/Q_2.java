@@ -2,7 +2,7 @@ package programmers_Stack_Queue;
 
 import java.util.*;
 
-class Solution {
+class Q_2 {
     public int solution(int[] priorities, int location) {
         int answer = 0;
         Queue<Paper> q = new LinkedList<Paper>();
