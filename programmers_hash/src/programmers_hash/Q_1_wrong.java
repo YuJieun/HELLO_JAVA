@@ -4,7 +4,7 @@ import java.util.*;
 
 //arraylist로 품. 효율성 fail
 
-class Solution {
+class Q_1_wrong {
     public String solution(String[] participant, String[] completion) {
         String answer = "";
         
