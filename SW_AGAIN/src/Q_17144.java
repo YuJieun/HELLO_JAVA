@@ -64,37 +64,12 @@ public class Q_17144 {
 					}
 				}
 			}
-//			for(int j=0; j<size; j++) {
-//				Dirt tmp = q.poll();
-//				if(map[tmp.i][tmp.j]/5==0)
-//					continue;
-//				
-//				int cnt = 0;
-//				for(int k=0; k<4; k++) {
-//					if(tmp.i+di[k]<0 || tmp.i+di[k]>=r || tmp.j+dj[k]<0 || tmp.j+dj[k]>=c || (tmp.j+dj[k]==0 && tmp.i+di[k]==cleaner_up)|| (tmp.j+dj[k]==0 && tmp.i+di[k]==cleaner_down) )
-//						continue;
-//					cnt++;
-//				}
-//				
-//				for(int k=0; k<4; k++) {
-//					if(tmp.i+di[k]<0 || tmp.i+di[k]>=r || tmp.j+dj[k]<0 || tmp.j+dj[k]>=c || (tmp.j+dj[k]==0 && tmp.i+di[k]==cleaner_up)|| (tmp.j+dj[k]==0 && tmp.i+di[k]==cleaner_down) )
-//						continue;
-//					dirty[tmp.i+di[k]][tmp.j+dj[k]] += map[tmp.i][tmp.j]/5;
-//					if(visited[tmp.i+di[k]][tmp.j+dj[k]] == false) {
-//						q.offer(new Dirt(tmp.i+di[k],tmp.j+dj[k]));
-//						visited[tmp.i+di[k]][tmp.j+dj[k]] = true;
-//					}
-//				}
-//				map[tmp.i][tmp.j] = map[tmp.i][tmp.j]- cnt*(map[tmp.i][tmp.j]/5);		
-//			}
-			
 			for(int j=0; j<r; j++) {
 				for(int k=0; k<c; k++) {
 					map[j][k] += dirty[j][k];
 				}
 			}
 			
-			System.out.print("dd");
 			
 			//여기까지 확산
 			//공기청정기 작동
@@ -128,9 +103,6 @@ public class Q_17144 {
 				map[cleaner_down][j+1] = map[cleaner_down][j];
 			}
 			map[cleaner_down][1] = 0;
-			
-			System.out.print("dd");
-
 		}
 
 		int sum = 0;
