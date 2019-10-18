@@ -17,7 +17,7 @@ public class Q_13458 {
 		long sum=0;
 		for(int i=0; i<n; i++) {
 			if(people[i]<=b)
-				sum = 1;
+				sum += 1;
 			else {
 				sum++;
 				int tmp = people[i]-b;
